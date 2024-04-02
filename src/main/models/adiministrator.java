@@ -1,4 +1,6 @@
+import models.Pessoa;
+
 public class adiministrator extends Pessoa{
     
-    list<evento> eventos;
+    List<evento> eventos;
 }
