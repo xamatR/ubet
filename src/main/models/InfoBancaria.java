@@ -1,3 +1,5 @@
+package models;
+
 import jakarta.persistence.Id;
 
 public class InfoBancaria {

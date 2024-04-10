@@ -1,3 +1,5 @@
+package models;
+
 public class Odds {
     @Id
     private Long id;

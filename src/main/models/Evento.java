@@ -1,3 +1,5 @@
+package models;
+
 import jakarta.persistence.OneToMany;
 
 public class Evento {
