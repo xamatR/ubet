@@ -11,5 +11,4 @@ public class InfoBancaria {
     private String conta;
     private String banco;
     private String tipoConta;
-    
 }
