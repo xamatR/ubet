@@ -10,9 +10,9 @@ public class Cliente extends Pessoa{
     private String ddd;
     private String telefone;
 
-    @OneToMany
+    @ManyToOne
     private List<InfoBancaria> infoBancaria;
 
-    @OneToMany
+    @ManyToOne
     private List<Aposta> apostas;
 }

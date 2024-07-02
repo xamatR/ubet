@@ -1,5 +1,6 @@
 package models;
 
+import jakarta.persistence.ManyToOne;
 import models.Pessoa;
 
 public class adiministrator extends Pessoa{    
@@ -7,6 +8,6 @@ public class adiministrator extends Pessoa{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @OnetoMany
+    @ManyToOne
     List<evento> eventos;
 }

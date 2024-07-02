@@ -9,6 +9,6 @@ public class Evento {
     private String titulo;
     private String descricao;
 
-    @OneToMany
+    @ManyToOne
     private List<Escolha> escolhas;
 }
