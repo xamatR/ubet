@@ -1,9 +1,9 @@
 package com.xamat.bet.api.dto;
 
+import com.xamat.bet.models.Cliente;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-import com.xamat.bet.api.model.Pessoa;
 import org.modelmapper.ModelMapper;
 
 @Data
@@ -15,7 +15,7 @@ public class ClienteDTO {
     private String email;
 
 
-    public static ClienteDTO from(Pessoa pessoa) {
+    public static ClienteDTO from(Cliente pessoa) {
         ModelMapper modelMapper = new ModelMapper();
         ClienteDTO dto = modelMapper.map(pessoa, ClienteDTO.class);
         dto.nome = pessoa.getNome();

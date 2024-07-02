@@ -1,9 +1,9 @@
 package com.xamat.bet.api.dto;
 
+import com.xamat.bet.models.Escolha;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-import com.xamat.bet.api.model.Pessoa;
 
 import java.time.LocalDate;
 
@@ -19,7 +19,7 @@ public class EscolhaDTO {
     private LocalDate dataFim;
 
 
-    public static EscolhaDTO from(Pessoa pessoa) {
+    public static EscolhaDTO from(Escolha escolha) {
         ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(pessoa, EscolhaDTO.class);
     }

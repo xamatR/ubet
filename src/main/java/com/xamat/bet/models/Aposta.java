@@ -1,4 +1,4 @@
-package models;
+package com.xamat.bet.models;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

@@ -3,11 +3,8 @@ package com.xamat.bet.api.dto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-import com.xamat.bet.api.model.Pessoa;
 
-import org.modelmapper.ModelMapper;
-
-import com.xamat.bet.api.model.adiministrator;
+import com.xamat.bet.models.Adiministrator;
 
 @Data
 @NoArgsConstructor
@@ -17,7 +14,7 @@ public class AdiministradorDTO {
     private String nome;
     private String email;
 
-    public static AdiministradorDTO from(Pessoa pessoa) {
+    public static AdiministradorDTO from(Adiministrator pessoa) {
         ModelMapper modelMapper = new ModelMapper();
         AdiministradorDTO dto = modelMapper.map(pessoa, AdiministradorDTO.class);
         dto.nome = pessoa.getNome();

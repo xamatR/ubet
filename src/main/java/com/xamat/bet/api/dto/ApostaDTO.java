@@ -4,7 +4,7 @@ import org.modelmapper.ModelMapper;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.xamat.bet.api.model.Aposta;
+import com.xamat.bet.models.Aposta;
 
 @Data
 @NoArgsConstructor

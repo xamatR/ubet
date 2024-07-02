@@ -1,5 +1,13 @@
 package com.xamat.bet.api.dto;
 
+import org.modelmapper.ModelMapper;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+import com.xamat.bet.models.InfoBancaria;
+
 public class InfoBancariaDTO {
 
     private Long id;

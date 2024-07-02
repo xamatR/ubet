@@ -1,4 +1,4 @@
-package models;
+package com.xamat.bet.models;
 
 import jakarta.persistence.OneToMany;
 
