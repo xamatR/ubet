@@ -19,10 +19,10 @@ public class Escolha {
     private LocalDate dataInicio;
     private LocalDate dataFim;
 
-    @ManyToMany(mappedBy = "escolhas")
-    private List<eventos> eventos;
+    @ManyToOne
+    private Evento evento;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "escolha")
-    private List<Odd> odds;
+    @OneToOne
+    private Aposta aposta;
+
 }

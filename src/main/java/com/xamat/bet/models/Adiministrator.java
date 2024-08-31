@@ -8,6 +8,5 @@ public class Adiministrator extends Pessoa{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @ManyToOne
-    List<evento> eventos;
+
 }

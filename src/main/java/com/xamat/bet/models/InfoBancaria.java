@@ -1,6 +1,9 @@
 package com.xamat.bet.models;
 
+import org.hibernate.annotations.ManyToAny;
+
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 public class InfoBancaria {
     @Id
@@ -11,4 +14,7 @@ public class InfoBancaria {
     private String conta;
     private String banco;
     private String tipoConta;
+
+    @ManyToOne
+    private Cliente cliente;
 }

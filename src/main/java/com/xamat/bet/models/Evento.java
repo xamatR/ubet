@@ -1,5 +1,6 @@
 package com.xamat.bet.models;
 
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
 public class Evento {
@@ -11,4 +12,7 @@ public class Evento {
 
     @OneToMany
     private List<Escolha> escolhas;
+
+    @ManyToOne
+    private Administrator adm;
 }
